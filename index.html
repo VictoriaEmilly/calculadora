@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <table>
+        <caption>Calculadora</caption>
+        <tr class="tela">
+            <td colspan="4">
+                <p id="display"></p>
+            </td>
+
+        <tr>
+            <td><input type="button" value="C" onclick="cancel()"></td>
+            <td><input type="button" value="CE" onclick="cancelEntry()"></td>
+            <td><input type="button" value="/" onclick="inserir('/')"></td>
+            <td><input type="button" value="X" onclick="inserir('*')" </td>
+        </tr>
+        <tr>
+            <td><input type="button" value="7" onclick="inserir('7')"></td>
+            <td><input type="button" value="8" onclick="inserir('8')"></td>
+            <td><input type="button" value="9" onclick="inserir('9')"></td>
+            <td><input type="button" value="-" onclick="inserir('-')"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="4" onclick="inserir('4')"></td>
+            <td><input type="button" value="5" onclick="inserir('5')"></td>
+            <td><input type="button" value="6" onclick="inserir('6')"></td>
+            <td><input type="button" value="+" onclick="inserir('+')"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="1" onclick="inserir('1')"></td>
+            <td><input type="button" value="2" onclick="inserir('2')"></td>
+            <td><input type="button" value="3" onclick="inserir('3')"></td>
+            <td rowspan="2"><input type="button" value="=" id="igual" onclick="calc()"></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="button" value="0" id="zero" onclick="inserir('0')"></td>
+            <td><input type="button" value="." onclick="inserir('.')"></td>
+        </tr>
+    </table>
+    <footer>&copy; Victoria Santos</footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
